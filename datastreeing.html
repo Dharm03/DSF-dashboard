@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DATA STEERING</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--header-->
+<div class="container-fluid" id="grad">
+<div class="row" >
+
+<div class="navbar-brand  ml-4">
+<a href="datastreeing.html" id="logo"><img src="img/logo.jpg" class="img-responsive"></a>
+</div>
+
+<div class="login icon-bar">
+<div id="log">
+<i class="fa fa-user-circle-o"><span class="dropdown-toggle" data-toggle="modal" data-target="#myModal"> Login</span></i>
+</div>
+<div>
+<p id="welcome"></p>
+<div id="lout" style="display:none;">
+<a class="dropdown-toggle" data-toggle="dropdown"></a>
+<p class="dropdown-menu">
+<a href="datastreeing.html" class="dropdown-item">Logout</a>
+</p>
+</div>
+</div>
+
+<div class="modal col-sm-4" id="myModal">
+  <div class="modal-header">
+          <h4 class="modal-title">Login here</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div><br/>
+    <form name="loginForm" validate>
+        <div class="form-group">
+            <label for="username"><b>Username</b></label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Enter username"  required>
+        </div>
+        <div class="form-group">
+            <label for="password"><b>Password</b></label>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Enter password" required>
+        </div>
+        <div class="checkbox">
+        <label><input type="checkbox" value="">Remember Me</label>
+      </div>
+        <div class="form-group" id="buttn">
+            <button class="btn btn-block"type="submit" onclick="writeName();">Log in</button>
+        </div>
+    </form>
+</div>
+</div>
+
+</div>
+</div>
+
+<!--content-->
+
+<div class="container-fluid">
+<div class="row">
+
+  <!--sidebar-->
+
+<nav class="col-sm-2 sidebar icon-bar" id="sidenav">
+<a class="nav-link active" href="#home" id="hom"><i class="fa fa-home"></i> HOME</a>
+<a class="nav-link" href="#setting" id="sett"><i class="fa fa-cog" ></i> SETTING</a>
+<a class="nav-link" href="#"  id="report"><i class="fa fa-clipboard"></i> REPORT</a>
+
+</nav>
+
+<main class="col-sm-10">
+
+<div id="home">
+  <!--section first-->
+<section>
+  <div class="row">
+<div class="col" >
+  <div class="card text-white" style="background-color:#0499bf">
+  <p class="card-block">  TOTAL ISSUES</p><br/>
+  <p><img src="img/pic1.jpg" class="img-responsive"/><span> 120</span></p>
+  </div>
+ <br/>
+<div class="card text-white" style="background-color:#0aa52d">
+<p class="card-block">CLOSED ISSUES </p><br/>
+<p><img src="img/pic3.jpg" class="img-responsive"/><span> 50</span></p>
+</div>
+</div>
+
+
+<div class="col">
+  <div class="card text-white" style="background-color:#c62f1e">
+  <p class="card-block">  NEW ISSUES</p><br/>
+  <p><img src="img/pic2.jpg" class="img-responsive"/><span> 10</span></p>
+  </div>
+<br/>
+<div class="card text-white" style="background-color:#505050">
+<p class="card-block">WIP ISSUES</p><br>
+<p><img src="img/pic4.jpg" class="img-responsive"/><span> 60</span></p>
+</div>
+</div>
+
+
+<div class="col sec">
+<img src="img/graph.jpg" class="img-responsive"/></div>
+
+<div class="col sec">
+<img src="img/chat.jpg" class="img-responsive "/></div>
+</div>
+</section>
+
+<!--section second-->
+<section>
+<div class="table-responsive content">
+<div id="head">
+   <p><b>LATEST ISSUES</b>
+  <button class="btn btn-primary">View All</button></p>
+</div>
+<table class="table">
+<thead>
+<tr>
+  <th>ID</th>
+  <th>SUMMARY</th>
+  <th>CREDIT</th>
+  <th>CREDIT BY</th>
+  <th>ASSIGNED TO</th>
+  <th>PRIORITY</th>
+  <th>STATE</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1782</td>
+<td>Image are not well displayed</td>
+<td>4/22/18</td>
+<td>Jhon Doe</td>
+<td>Mike Jonathan</td>
+<td>High</td>
+<td><button class="btn btn-danger">New</button></td>
+</tr>
+
+<tr>
+<td>1982</td>
+<td>Image are not well displayed</td>
+<td>4/22/18</td>
+<td>Jhon Doe</td>
+<td>Mike Jonathan</td>
+<td>Medium</td>
+<td><button class="btn btn-success">Closed</button></td>
+</tr>
+
+<tr>
+<td>1982</td>
+<td>Image are not well displayed</td>
+<td>4/22/18</td>
+<td>Jhon Doe</td>
+<td>Mike Jonathan</td>
+<td>Low</td>
+<td><button class="btn btn-secondary">WIP</button></td>
+</tr>
+
+<tr>
+<td>1982</td>
+<td>Image are not well displayed</td>
+<td>4/22/18</td>
+<td>Jhon Doe</td>
+<td>Mike Jonathan</td>
+<td>High</td>
+<td><button class="btn btn-danger">New</button></td>
+</tr>
+
+<tr>
+<td>12311</td>
+<td>Image are not well displayed</td>
+<td>4/22/18</td>
+<td>Jhon Doe</td>
+<td>Mike Jonathan</td>
+<td>High</td>
+<td><button class="btn btn-success">Closed</button></td>
+</tr>
+
+<tbody>
+
+</table></div></section>
+</div>
+<!---------Home End---------->
+
+<!----- SETTING START-------->
+<div id="setting" style="display:none">
+<section>
+<div class="container">
+    <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" href="#" id="config">Configuration *</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Soure Data</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Target Data</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Column Mapping</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Column Validation Rules</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Rules Bank</a>
+    </li>
+    <li class="nav-item dropdown"  id="">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown"></a>
+    <div class="dropdown-menu" id="menu_drop">
+        <a class="dropdown-item" href="#"> <i class="fa fa-plus"></i>Add Row</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-times-circle"></i> Delete Row</a>
+        <a class="dropdown-item" href="#"><i class="fa fa-refresh"></i> Refresh</a>
+      <a class="dropdown-item" href="#"><i class="fa fa-refresh"></i> Refresh All Tabs</a>
+    <a class="dropdown-item" href="#"><i class="fa fa-floppy-o"></i> Save</a>
+  <a class="dropdown-item" href="#"><i class="fa fa-cog"></i>  Run</a>
+</div>
+    </li>
+  </ul>
+
+  <table class="table" id="set_table">
+  <thead>
+  <tr>
+    <th>SOURCE DETAILS</th>
+    <th>ATTRIBUTE</th>
+    <th>TARGET DETAILS</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+  <td>InputBankCust.csv</td>
+  <td>Host</td>
+  <td>Localhost</td>
+
+  </tr>
+
+  <tr>
+    <td>InputBankCust.csv</td>
+    <td>UserId</td>
+    <td>Root</td>
+  </tr>
+
+  <tr>
+    <td>InputBankCust.csv</td>
+    <td>Password</td>
+    <td>Root</td>
+  </tr>
+
+  <tr>
+    <td>InputBankCust.csv</td>
+    <td>DB Name</td>
+    <td>Bank</td>
+
+  </tr>
+
+  <tr>
+    <td>InputBankCust.csv</td>
+    <td>Host</td>
+    <td>Localhost</td>
+  </tr>
+
+  <tr>
+    <td>InputBankCust.csv</td>
+    <td>UserId</td>
+    <td>Root</td>
+
+  </tr>
+
+  <tr>
+    <td>InputBankCust.csv</td>
+    <td>Password</td>
+    <td>Root</td>
+
+  </tr>
+
+  <tbody>
+
+  </table>
+</div>
+</section>
+</div>
+
+<!------SETTING END---------->
+</main>
+</div></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready( function() {
+    //alert('Hello');
+    $("#hom").click(function(){
+      $("#home").show();
+      $("#setting").hide();
+    });
+
+    $("#sett").click(function(){
+      $("#setting").show();
+      $("#home").hide();
+    });
+
+    $("#report").click(function(){
+      $("#setting").show();
+      $("#home").show();
+    });
+
+    $("#buttn").click(function(){
+      $("#log").hide();
+      $("#lout").show();
+
+    });
+
+});
+</script>
+
+
+<script type="text/javascript">
+
+function writeName(){
+var welcomeMsg = document.getElementById('welcome');
+var name = document.getElementById('username');
+var formContent = document.getElementById('myModal');
+welcomeMsg.innerHTML=""+username.value+"";
+formContent.innerHTML="WELCOME "+username.value+" <br/> press OK to continue...";
+}
+
+</script>
+
+</body>
+</html>
